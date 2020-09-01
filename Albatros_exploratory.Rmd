@@ -33,8 +33,6 @@ op <- options(digits.secs=3)
 # the working directory is a folder where R reads and saves files.
 setwd('C:/Lucia/Datos/JOBS/Liverpool_Albatross_infrasounds_2020_2021/Analysis')
 
-#Icanot access the sensor table uploaded in github
-sensor_table <-read.csv(text=GET("https://github.com/lmml2-sci/albatross/find/master/Logger_deployment_tbl.csv"), stringsAsFactors=F)
 
 # load in logger table
 sensor_table <- read.csv('Logger-Combined_data/Logger_deployment_tbl.csv', stringsAsFactors=F)
